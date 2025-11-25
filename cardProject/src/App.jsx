@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Cards from './components/cards'
+import SectionOne from './components/cards'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div id='cardsContainer'>
+        <SectionOne imageUrl="https://plus.unsplash.com/premium_photo-1683619761492-639240d29bb5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2hlc3NlJTIwYnVyZ2VyfGVufDB8fDB8fHww" headingType="Classic" food="Cheese Burger" description="A juicy and melty cheese burger crafted with timeless flavor." />
+        <SectionOne imageUrl="https://images.unsplash.com/photo-1666819604716-7b60a604bb76?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2hpY2tlbiUyMHNhbmR3aWNofGVufDB8fDB8fHww" headingType="Crunchy" food="Chicken Sandwich" description="A golden, crunchy chicken fillet served with fresh toppings and creamy sauce." />
+        <SectionOne imageUrl="https://plus.unsplash.com/premium_photo-1664392112262-271039647be9?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" headingType="Fiery" food="Spicy Paneer Burger" description="A bold, fiery paneer patty layered with spices and cooling sauces." />
+        <SectionOne imageUrl="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8R3JpbGxlZCUyME11c2hyb29tfGVufDB8fDB8fHww" headingType="Savory" food="Grilled Mushroom Melt" description="A rich mushroom-filled burger packed with smoky flavor and melted cheese." />
+        <SectionOne imageUrl="https://images.unsplash.com/photo-1603046891726-36bfd957e0bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QXZhY2FkbyUyMHRvYXN0fGVufDB8fDB8fHww" headingType="Fresh" food="Avocado Veggie Stack" description="A refreshing veggie burger stacked with creamy avocado and crisp greens." />
+      </div >
     </>
   )
+
 }
 
 export default App
