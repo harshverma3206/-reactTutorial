@@ -13,18 +13,19 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Unbounded", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   background-color: #222;
   color: #f9f9f9;
-
+  height: 100%;
+  width: 100%;
 }
 
 main {
@@ -33,7 +34,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ee0100;
+  background-color: #0066cc;
 }
 
 main h1,
@@ -42,13 +43,13 @@ p {
   border-radius: 1vw;
   padding: 1vw;
   cursor: pointer;
+  /* text-transform: uppercase; */
   transition: all .5s ease-in-out;
 
   &:hover {
     background-color: #f9f9f9;
-    color: #ee0100;
+    color: #0066cc;
     border-color: #f9f9f9;
-    text-transform: uppercase;
   }
 }
 
@@ -59,13 +60,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
@@ -88,18 +89,21 @@ h6 {
   font-size: 1rem;
 }
 
-p {
-  margin-bottom: 1em;
-}
 
 a {
   color: #0066cc;
   text-decoration: none;
   transition: color 0.3s ease;
+  background-color: #f9f9f9;
+  padding: .5vw 1vw;
+  border-radius: .5vw;
+  transition: all .3s ease-in-out;
+  margin-top: 1vw;
 }
 
 a:hover {
   color: #0052a3;
+  box-shadow: 1px 2px 20px #f9f9f9;
 }
 
 /* Lists */
