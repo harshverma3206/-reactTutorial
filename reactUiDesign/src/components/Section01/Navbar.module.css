@@ -1,0 +1,22 @@
+.container{
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+}
+
+.nav{
+    /* background-color: yellow; */
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 50px; */
+}
+
+.btn button{
+    margin: 0 .5rem;
+    border-radius: 2rem;
+    padding: .6rem 1.6rem;
+    border: 1px solid #4da3ff;
+}
